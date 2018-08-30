@@ -1,0 +1,36 @@
+var d3_layout_phylotree_event_id = "d3.layout.phylotree.event",
+d3.layout.newick_parser = function(nwk_str, bootstrap_values) {
+d3.layout.phylotree = function(container) {
+    d3_hierarchy = d3.layout
+      node_circle_size: d3.functor(3),
+    draw_line = d3.svg
+    max_depth = d3.max(nodes, function(n) {
+      var scale = d3.scale
+        scaleTickFormatter = d3.format(".2g");
+      draw_scale_bar = d3.svg
+            d3.round(
+            .text(d3.functor(d[0])(node))
+      var coordinates = d3.mouse(tree_container[0]);
+    options["node_circle_size"] = d3.functor(attr === undefined ? 3 : attr);
+      d3.select(self.container).on(
+      spline = d3.svg
+      spline = d3.svg
+      var brush_object = d3.svg
+          d3.scale
+        .y(d3.scale.identity().domain([0, sizes[1] - phylotree.pad_height()]))
+          var extent = d3.event.target.extent(),
+          brush.call(d3.event.target.clear());
+      var zoom = d3.behavior
+          var translate = d3.event.translate;
+          d3.select("." + css_classes["tree-container"]).attr(
+            "translate(" + translate + ")scale(" + d3.event.scale + ")"
+          edge_styler(d3.select(this), d);
+          node_styler(d3.select(this), d);
+    container = d3.select(container);
+    container = d3.select(container);
+  d3.rebind(phylotree, d3_hierarchy, "sort", "children", "value");
+  phylotree.links = d3.layout.cluster().links;
+d3.layout.phylotree.is_leafnode = d3_phylotree_is_leafnode;
+d3.layout.phylotree.add_custom_menu = d3_add_custom_menu;
+d3.layout.phylotree.trigger_refresh = d3_phylotree_trigger_refresh;
+d3.layout.phylotree.nexml_parser = nexml_parser;
