@@ -15,6 +15,7 @@ var d3_layout_phylotree_event_id = "d3.layout.phylotree.event",
  * @returns {Function} phylotree - an instance of a Phylotree.
  */
 d3.layout.phylotree = function(container) {
+
   var item_selected = d3_phylotree_item_selected,
     node_visible = d3_phylotree_node_visible,
     node_notshown = d3_phylotree_node_notshown,
@@ -785,7 +786,6 @@ d3.layout.phylotree = function(container) {
         range_limit = domain_limit * (radius / _extents[1][1]);
         if (range_limit < 30) {
           var stretch = Math.ceil(30 / range_limit);
-          //console.log (stretch, domain_limit, radius, _extents[1][1], range_limit, domain_limit);
           range_limit *= stretch;
           domain_limit *= stretch;
         }
