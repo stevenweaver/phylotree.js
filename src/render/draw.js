@@ -190,8 +190,10 @@ class TreeRender {
    * @returns The selected SVG element if getting, or the current ``phylotree`` if setting.`
    */
   initialize_svg(svg_element) {
+
     if (!arguments.length) return this.svg;
 
+    // Check svg_element type 
     if (this.svg !== svg_element) {
       d3.select(svg_element).select("svg").remove();
 
@@ -1368,3 +1370,4 @@ _.extend(TreeRender.prototype, menus);
 _.extend(TreeRender.prototype, opt);
 
 export default TreeRender;
+
